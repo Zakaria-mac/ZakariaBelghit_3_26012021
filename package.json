@@ -1,0 +1,15 @@
+{
+  "name": "p3_belghit_zakaria",
+  "version": "1.0.0",
+  "description": "Creation of the \"Ohmyfood\" website on mobile device - it should be responsive.",
+  "main": "index.js",
+  "scripts": {
+    "sass":"sass --watch ./sass/main.scss:./ohmyfood.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "P3_BELGHIT_ZAKARIA"
+  },
+  "author": "Zakaria Belghit",
+  "license": "ISC"
+}
