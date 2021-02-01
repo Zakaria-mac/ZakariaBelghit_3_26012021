@@ -54,10 +54,10 @@ body h4 {
   }
   .search__form span {
     color: black;
-    font-size: 1rem;
+    font-size: 1em;
   }
   .search__input {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: normal;
     margin-left: 10%;
     background-color: #eaeaea;
@@ -78,14 +78,14 @@ body h4 {
     line-height: normal;
   }
   .title__head {
-    font-size: 1.6rem;
+    font-size: 1.6em;
     font-weight: bold;
     text-align: center;
     width: 80%;
     margin: 0;
   }
   .title__text {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     text-align: center;
     font-weight: lighter;
   }
@@ -100,7 +100,7 @@ body h4 {
   .title__btn a {
     text-decoration: none;
     color: white;
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: normal;
     font-family: "roboto", serif, sans-serif;
   }
@@ -115,7 +115,7 @@ body h4 {
     width: auto;
   }
   .navigation__title {
-    font-size: 1.6rem;
+    font-size: 1.6em;
     font-weight: bold;
   }
 
@@ -134,12 +134,12 @@ body h4 {
     width: 90%;
     margin-left: 2%;
     padding: 6% 2% 6% 0;
-    border: 1px solid #f6f6f6;
-    background-color: #f6f6f6;
-    border-radius: 23px 23px 23px 23px;
+    border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 3px 10px rgba(104, 54, 54, 0.2);
     max-width: 100%;
     margin-bottom: 10%;
+    background-color: #f6f6f6;
+    border: 1px solid #f6f6f6;
   }
   .choices__a {
     width: 100%;
@@ -150,7 +150,7 @@ body h4 {
     text-decoration: none;
   }
   .choices__number {
-    font-size: 0.9rem;
+    font-size: 0.9em;
     border: 1px solid #b260db;
     background-color: #b260db;
     color: white;
@@ -159,12 +159,12 @@ body h4 {
     margin: 0 8% 0 -4%;
   }
   .choices span {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     color: grey;
     margin-right: 8%;
   }
   .choices__text {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: normal;
     color: black;
     padding: 0;
@@ -182,7 +182,7 @@ body h4 {
     padding: 5% 0 8% 0;
   }
   .restaurants__title {
-    font-size: 1.6rem;
+    font-size: 1.6em;
     font-weight: bold;
     padding-left: 5%;
   }
@@ -224,14 +224,14 @@ body h4 {
     border-radius: 15px 15px 0 0;
   }
   .carte__name {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-weight: bold;
     color: black;
     margin-left: 5%;
     margin-top: 5%;
   }
   .carte__adress {
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: lighter;
     line-height: 0.5px;
     color: black;
@@ -240,7 +240,7 @@ body h4 {
   .carte span {
     color: black;
     margin-left: 5%;
-    font-size: 1.5rem;
+    font-size: 1.5em;
     font-weight: lighter;
     position: relative;
     bottom: 17%;
@@ -251,7 +251,7 @@ body h4 {
     background-color: #99E2D0;
     border-radius: 3px 3px 3px 3px;
     color: #0f9071;
-    font-size: 0.9rem;
+    font-size: 0.9em;
     text-align: center;
     width: 24%;
     padding: 2%;
@@ -270,7 +270,7 @@ body h4 {
   }
   .end_page__logo h4 {
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.6em;
     margin-left: 10%;
     padding-left: 5%;
     margin-bottom: 5%;
@@ -283,16 +283,180 @@ body h4 {
   .end_page__infos a {
     text-decoration: none;
     color: white;
-    font-size: 1.1rem;
+    font-size: 1.1em;
     font-family: "roboto", serif, sans-serif;
   }
   .end_page__infos a span {
-    font-size: 1.2rem;
+    font-size: 1.2em;
     margin-right: 5%;
   }
   .end_page__infos li {
     margin: 5%;
     width: 100%;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .top__previous a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1em;
+  }
+  .top__previous {
+    display: flex;
+    align-self: flex-start;
+    margin: 6% 0 0 6%;
+  }
+  .top__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: -7% 0 3% 0;
+  }
+  .top__logo img {
+    width: 100%;
+  }
+  .top__img {
+    display: flex;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+  }
+  .top__img img {
+    width: 100%;
+  }
+  .top__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f6f6f6;
+    background-color: #f6f6f6;
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    margin-top: -12%;
+  }
+  .top__title h1 {
+    font-family: "Shrikhand", "roboto", serif, sans-serif;
+    font-size: 1.6em;
+    margin: 5% 5% 3% 0;
+    padding-left: 0;
+  }
+  .top__title a {
+    text-decoration: none;
+    font-size: 1.4em;
+    color: black;
+    background-color: #f6f6f6;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-weight: lighter;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #f6f6f6;
+    width: 100%;
+  }
+  .menu__title {
+    padding-left: 5%;
+    margin-top: 5%;
+  }
+  .menu__title h2 {
+    color: black;
+    font-weight: lighter;
+    font-size: 1em;
+    margin-bottom: 9%;
+  }
+  .menu__line {
+    border-top: #99E2D0 solid 3px;
+    margin-left: 5%;
+    padding: 0;
+    width: 13%;
+  }
+
+  .dish_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .dish {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    height: 75px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 3px 10px rgba(104, 54, 54, 0.2);
+    max-width: 100%;
+    background-color: white;
+    border: 1px solid white;
+    margin: 3% 0 1% 0;
+    padding-left: 5%;
+  }
+  .dish__link {
+    text-decoration: none;
+  }
+  .dish__title {
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 4% 0 2% -2%;
+  }
+  .dish__text {
+    font-weight: lighter;
+    color: black;
+    font-size: 0.8em;
+    margin: 0 0 0 -2%;
+  }
+  .dish__price {
+    font-weight: bold;
+    color: black;
+    font-size: 1em;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 32px;
+    right: 10px;
+  }
+  .dish__btn {
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    position: relative;
+    bottom: 90px;
+    right: 10px;
+    visibility: hidden;
+  }
+
+  .btn_commander {
+    border: 1px solid #b260db;
+    background-color: #b260db;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px 50px 50px 50px;
+    padding: 5%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    display: flex;
+    align-self: center;
+  }
+  .btn_commander a {
+    text-decoration: none;
+    color: white;
+    font-family: "roboto", serif, sans-serif;
+    font-size: 1em;
   }
 }
 
