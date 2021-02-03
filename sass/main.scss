@@ -128,7 +128,7 @@ body h4
             font-weight: normal;
             font-family: 'roboto', serif, sans-serif;   
             text-align: center;
-            padding:5% 0 5% 0;  
+            padding:8% 0 8% 0;  
             width: 100%;
         }
     }
@@ -159,13 +159,13 @@ body h4
         display: flex;
         width: 90%;
         margin-left: 2%;
-        padding: 6% 2% 6% 0;
         @include btn-menu;
         margin-bottom: 10%;
         background-color: $fond-color;
         border: 1px solid $fond-color;
         &__a{
             width: 100%;
+            height: 78px;
             display: flex;
             flex-direction: row;
             justify-content: flex-start;
@@ -472,17 +472,21 @@ body h4
     }
     .btn_commander 
     {
-        @include btn-order;
         margin-top: 12%;
         margin-bottom: 12%;
         display: flex;
         align-self: center;
+        width: 50%;
         a 
         {
+            @include btn-order;
             text-decoration: none;
             color: white;
             font-family: 'roboto', serif, sans-serif;
             font-size: 1em;
+            padding:8% 0 8% 0;  
+            width: 100%;
+            text-align:center;
         }
     }
 }
@@ -566,7 +570,7 @@ body h4
             font-weight: bold;
             text-align: center;
             width: 80%;
-            margin: 0;
+            margin: 2% 0 0 0;
         }
         &__text
         {
@@ -576,10 +580,11 @@ body h4
         }
         &__btn
         {  
-            margin-top: 5%;
+            margin-top: 8%;
             margin-bottom: 2%;
-            padding: 5%;
             width: 40%;
+            display: flex;
+            justify-content: center
         }
         &__btn a 
         {
@@ -590,7 +595,7 @@ body h4
             font-weight: normal;
             font-family: 'roboto', serif, sans-serif;
             text-align: center;
-            padding: 12% 4% 12% 4%;
+            padding: 8% 4% 8% 4%;
             width: 100%;
         }
     }
@@ -718,7 +723,7 @@ body h4
             margin-top: 5%;
         }
         &__adress{
-            font-size: 1,1em;
+            font-size: 1.1em;
             font-weight: lighter;
             line-height: 0.5px;
             color: black;

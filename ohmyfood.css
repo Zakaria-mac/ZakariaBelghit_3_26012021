@@ -107,7 +107,7 @@ body h4 {
     font-weight: normal;
     font-family: "roboto", serif, sans-serif;
     text-align: center;
-    padding: 5% 0 5% 0;
+    padding: 8% 0 8% 0;
     width: 100%;
   }
 
@@ -139,7 +139,6 @@ body h4 {
     display: flex;
     width: 90%;
     margin-left: 2%;
-    padding: 6% 2% 6% 0;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 3px 10px rgba(104, 54, 54, 0.2);
     max-width: 100%;
@@ -149,6 +148,7 @@ body h4 {
   }
   .choices__a {
     width: 100%;
+    height: 78px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -449,20 +449,24 @@ body h4 {
   }
 
   .btn_commander {
-    border: 1px solid #b260db;
-    background-color: #b260db;
-    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
-    border-radius: 50px 50px 50px 50px;
     margin-top: 12%;
     margin-bottom: 12%;
     display: flex;
     align-self: center;
+    width: 50%;
   }
   .btn_commander a {
+    border: 1px solid #b260db;
+    background-color: #b260db;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px 50px 50px 50px;
     text-decoration: none;
     color: white;
     font-family: "roboto", serif, sans-serif;
     font-size: 1em;
+    padding: 8% 0 8% 0;
+    width: 100%;
+    text-align: center;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -542,7 +546,7 @@ body h4 {
     font-weight: bold;
     text-align: center;
     width: 80%;
-    margin: 0;
+    margin: 2% 0 0 0;
   }
   .title__text {
     font-size: 1.5em;
@@ -550,10 +554,11 @@ body h4 {
     font-weight: lighter;
   }
   .title__btn {
-    margin-top: 5%;
+    margin-top: 8%;
     margin-bottom: 2%;
-    padding: 5%;
     width: 40%;
+    display: flex;
+    justify-content: center;
   }
   .title__btn a {
     border: 1px solid #b260db;
@@ -566,7 +571,7 @@ body h4 {
     font-weight: normal;
     font-family: "roboto", serif, sans-serif;
     text-align: center;
-    padding: 12% 4% 12% 4%;
+    padding: 8% 4% 8% 4%;
     width: 100%;
   }
 
@@ -695,7 +700,7 @@ body h4 {
     margin-top: 5%;
   }
   .carte__adress {
-    font-size: 1, 1em;
+    font-size: 1.1em;
     font-weight: lighter;
     line-height: 0.5px;
     color: black;
