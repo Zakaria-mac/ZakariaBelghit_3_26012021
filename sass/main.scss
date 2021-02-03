@@ -9,8 +9,6 @@ $btn-color: #b260db;
     background-color: $btn-color;
     box-shadow: 1px 4px 10px rgba(0,0,0,0.3);
     border-radius: 50px 50px 50px 50px;
-    padding: 5%;
-   
 }
 @mixin btn-menu{
     border-radius: 20px 20px 20px 20px;
@@ -115,16 +113,23 @@ body h4
         }
         &__btn
         {  
-            @include btn-order;
             margin-top: 5%;
+            width: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         &__btn a 
         {
+            @include btn-order;
             text-decoration: none;
             color: white;
             font-size: 1em;
             font-weight: normal;
-            font-family: 'roboto', serif, sans-serif;
+            font-family: 'roboto', serif, sans-serif;   
+            text-align: center;
+            padding:5% 0 5% 0;  
+            width: 100%;
         }
     }
     .navigation
@@ -209,10 +214,9 @@ body h4
     {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding-left: 5%;
     }
     .carte
     {
@@ -430,7 +434,8 @@ body h4
         padding-left: 5%;     
         &__link{
             text-decoration: none;
-            
+            width: 100%;
+            height: 75px;        
         }
         &__title{
             color: black;
@@ -480,7 +485,467 @@ body h4
             font-size: 1em;
         }
     }
+}
+@media only screen and (min-width : 768px) and (max-width: 1024px){
+    body{
+        margin: 0%;
+    }
+    
+    .bloc_page
+    {
+        max-width: 100%;
+        margin: 0%;
+    }
+    .top_page
+    {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 5% 0 3% 0;
+    }
+    .logo img
+    {
+        width: 100%;
+    }
+    .search
+    {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        background-color: #eaeaea;
+        box-shadow: 0px 2px 2.5px rgba(0,0,0,0.2) inset;
+        &__form
+        {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color:black;
+            border: none;
+            margin-left: 7%;
+        }
+        &__form span 
+        {
+            color: black;
+            font-size: 1.6em;
+        }
+        &__input
+        {
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-left: 10%;
+            background-color: #eaeaea;
+            border: none;
+            width: auto;
+        }
+    }
+    .title
+    {
+        background-color: $fond-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        line-height: normal;
+        &__head
+        {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: center;
+            width: 80%;
+            margin: 0;
+        }
+        &__text
+        {
+            font-size: 1.5em;
+            text-align: center;
+            font-weight: lighter;
+        }
+        &__btn
+        {  
+            margin-top: 5%;
+            margin-bottom: 2%;
+            padding: 5%;
+            width: 40%;
+        }
+        &__btn a 
+        {
+            @include btn-order;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5em;
+            font-weight: normal;
+            font-family: 'roboto', serif, sans-serif;
+            text-align: center;
+            padding: 12% 4% 12% 4%;
+            width: 100%;
+        }
+    }
+    .navigation
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 5% 0 2% 5%;
+        padding: 0;
+        width: auto;
+        &__title{
+            font-size: 2em;
+            font-weight: bold;
+        }
+    }
+    .navi_choices{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin:0;
+        padding:0;
+    }
+    .choices{
+        display: flex;
+        width: 60%;
+        margin-left: 4%;
+        margin-bottom: 6%;
+        @include btn-menu;    
+        background-color: $fond-color;
+        border: 1px solid $fond-color;
+        &__a{
+            width: 100%;
+            height: 110px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            text-decoration:none;
+            }
+        &__number{
+            font-size: 1.2em;
+            border: 1px solid $btn-color;
+            background-color: $btn-color;
+            color: white;
+            border-radius: 100px 100px 100px 100px;
+            padding: 2% 3% 1% 3%;
+            margin: 0 10% 0 -4%;
+        }
+        span{
+            font-size: 1.6em;
+            color: grey;
+            margin-right: 10%;
+        }
+        &__text{
+            font-size: 1.5em;
+            font-weight: normal;
+            color: black;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    .restaurants
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        background-color: $fond-color;
+        margin: 0;
+        padding: 3% 0 8% 0;
+        &__title{
+            font-size: 2em;
+            font-weight: bold;
+            padding-left: 5%;
+        }
+    }
+    .restau_choices
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .carte
+    {
+        width: 40%;
+        height: 252px;
+        border: 1px solid hidden;
+        border-radius: 15px 15px 15px 15px;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: white;
+        margin: 0 2% 4% 2%;
+        &__a
+        {
+            width: 100%;
+            height: 252px;
+            text-decoration: none;
+        }
+        &__img
+        {
+            width: 100%;
+            max-height: 174px;
+            overflow: hidden;
+        }
+        &__img img
+        {
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+        }
+        &__name{
+            font-size: 1.2em;
+            font-weight: bold;
+            color: black;
+            margin-left: 5%;
+            margin-top: 5%;
+        }
+        &__adress{
+            font-size: 1,1em;
+            font-weight: lighter;
+            line-height: 0.5px;
+            color: black;
+            margin-left: 5%;
+        }
+        span
+        {
+            color: black;
+            margin-left: 5%;
+            font-size: 1.6em;
+            font-weight: lighter;
+            position: relative;
+            bottom: 17%;
+            left: 80%;
+        }
+        &__nouveau
+        {
+            border: 1px solid $third-color;
+            background-color: $third-color;
+            border-radius: 3px 3px 3px 3px;
+            color: #0f9071;
+            font-size: 1em;
+            text-align: center;
+            width: 24%;
+            padding: 2%;
+            position: relative;
+            bottom: 108%;
+            left:68%;
+        }
+    }
+    .end_page
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color: #353535;
+        width: 100%;
+        &__logo h4{
+            color: white;
+            font-size: 1.6em;
+            margin-left: 35%;
+            padding-left: 5%;
+            margin-bottom: 5%;
+        }
+        &__infos ul {
+            list-style-type: none;
+            margin-left:0%;
+            margin-top: 0;
+            width: 100%;           
+        }
+        &__infos a{
+           text-decoration: none;
+           color: white;
+           font-size: 1.1em;
+           font-family: 'roboto', serif, sans-serif;
+        }
+        &__infos a span{
+            font-size: 1.2em;
+            margin-right: 5%;
 
-    
-    
+        }
+        &__infos li{
+            margin: 5%;
+            width: 100%;
+        }
+    }
+    .top{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        &__previous a{
+            text-decoration: none;
+            color: black;
+            font-size: 1.1em;
+        }
+        &__previous{ 
+            display: flex;
+            align-self: flex-start;
+            margin: 6% 0 0 6%;
+        }
+        &__logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            margin: -7% 0 3% 0;
+        }
+        &__logo img{
+            width: 100%;
+        } 
+        &__img{
+            display: flex;
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+        &__img img{
+            width: 100%;
+        }
+        &__title{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid $fond-color;
+            background-color: $fond-color;
+            border-radius: 30px 30px 0 0;
+            width: 100%;
+            margin-top: -12%;
+        }
+        &__title h1{
+            font-family:'Shrikhand', 'roboto', serif, sans-serif;
+            font-size: 1.6em;
+            margin: 5% 5% 3% 0;
+            padding-left: 0;
+        }
+        &__title a{
+            text-decoration: none;
+            font-size: 1.4em;
+            color: black;
+            background-color: $fond-color;
+            margin-left: 2%;
+            margin-top: 2%;    
+            font-weight: lighter;
+        }
+
+    }
+    .menu
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        background-color:$fond-color;
+        width: 100%;
+        &__title{
+            padding-left: 5%;
+            margin-top: 5%;
+        }
+        &__title h2{
+            color: black;
+            font-weight: lighter;
+            font-size: 1em;
+            margin-bottom: 9%;
+        }
+        &__line{
+            border-top: $third-color solid 3px;
+            margin-left: 5%;
+            padding: 0;
+            width: 13%;
+        }
+    }
+    .dish_btn
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        width: 100%;
+        margin:0;
+    }
+    .dish
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 90%;
+        height: 75px;
+        @include btn-menu;
+        background-color: white;
+        border: 1px solid white;
+        margin: 3% 0 1% 0;
+        padding-left: 5%;     
+        &__link{
+            text-decoration: none;
+            width: 100%;
+            height: 75px;        
+        }
+        &__title{
+            color: black;
+            font-weight: bold;
+            font-size: 1em;
+            margin:4% 0 2% -2%;
+        }
+        &__text{
+            font-weight: lighter;
+            color: black;
+            font-size: 0.8em;
+            margin: 0 0 0 -2%; 
+                 
+        }
+        &__price{
+            font-weight: bold;
+            color: black;
+            font-size: 1em;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            bottom: 32px;
+            right:10px;           
+        }
+        &__btn {
+            display: flex;
+            justify-content: flex-end;
+            color: black;
+            position: relative;
+            bottom: 90px;
+            right:10px;
+            visibility: hidden;       
+        }
+    }
+    .btn_commander 
+    {
+        @include btn-order;
+        margin-top: 12%;
+        margin-bottom: 12%;
+        display: flex;
+        align-self: center;
+        a 
+        {
+            text-decoration: none;
+            color: white;
+            font-family: 'roboto', serif, sans-serif;
+            font-size: 1em;
+        }
+    }
 }
