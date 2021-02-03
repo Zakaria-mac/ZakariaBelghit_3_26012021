@@ -426,7 +426,7 @@ body h4
         flex-direction: column;
         justify-content: flex-start;
         width: 90%;
-        height: 75px;
+        height: 70px;
         @include btn-menu;
         background-color: white;
         border: 1px solid white;
@@ -435,7 +435,7 @@ body h4
         &__link{
             text-decoration: none;
             width: 100%;
-            height: 75px;        
+            height: 70px;        
         }
         &__title{
             color: black;
@@ -457,7 +457,7 @@ body h4
             display: flex;
             justify-content: flex-end;
             position: relative;
-            bottom: 32px;
+            bottom: 34px;
             right:10px;           
         }
         &__btn {
