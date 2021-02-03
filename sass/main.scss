@@ -800,7 +800,7 @@ body h4
         &__previous a{
             text-decoration: none;
             color: black;
-            font-size: 1.1em;
+            font-size: 2.7em;
         }
         &__previous{ 
             display: flex;
@@ -820,7 +820,7 @@ body h4
         &__img{
             display: flex;
             width: 100%;
-            height: 220px;
+            height: 50%;
             overflow: hidden;
         }
         &__img img{
@@ -833,26 +833,25 @@ body h4
             align-items: center;
             border: 1px solid $fond-color;
             background-color: $fond-color;
-            border-radius: 30px 30px 0 0;
+            border-radius: 50px 50px 0 0;
             width: 100%;
             margin-top: -12%;
         }
         &__title h1{
             font-family:'Shrikhand', 'roboto', serif, sans-serif;
-            font-size: 1.6em;
-            margin: 5% 5% 3% 0;
+            font-size: 3em;
+            margin: 3% 5% 3% 0;
             padding-left: 0;
         }
         &__title a{
             text-decoration: none;
-            font-size: 1.4em;
+            font-size: 2.5em;
             color: black;
             background-color: $fond-color;
             margin-left: 2%;
-            margin-top: 2%;    
+            margin-top: 0;    
             font-weight: lighter;
         }
-
     }
     .menu
     {
@@ -869,21 +868,21 @@ body h4
         &__title h2{
             color: black;
             font-weight: lighter;
-            font-size: 1em;
+            font-size: 1.5em;
             margin-bottom: 9%;
         }
         &__line{
             border-top: $third-color solid 3px;
             margin-left: 5%;
             padding: 0;
-            width: 13%;
+            width: 10%;
         }
     }
     .dish_btn
     {
         display: flex;
         flex-direction: column;
-        justify-content:flex-start;
+        justify-content:center;
         align-items: center;
         width: 100%;
         margin:0;
@@ -893,64 +892,68 @@ body h4
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 90%;
-        height: 75px;
+        width: 65%;
+        height: 90px;
         @include btn-menu;
         background-color: white;
         border: 1px solid white;
-        margin: 3% 0 1% 0;
-        padding-left: 5%;     
+        margin: 2% 0 1% 0;
+        
         &__link{
             text-decoration: none;
             width: 100%;
-            height: 75px;        
+            height: 90px;        
         }
         &__title{
             color: black;
             font-weight: bold;
-            font-size: 1em;
-            margin:4% 0 2% -2%;
+            font-size: 1.6em;
+            margin:3% 0 0 3%;
         }
         &__text{
             font-weight: lighter;
             color: black;
-            font-size: 0.8em;
-            margin: 0 0 0 -2%; 
-                 
+            font-size: 1.2em;
+            margin: 1% 0 0 3%;                  
         }
         &__price{
             font-weight: bold;
             color: black;
-            font-size: 1em;
+            font-size: 1.2em;
             display: flex;
             justify-content: flex-end;
             position: relative;
-            bottom: 32px;
-            right:10px;           
+            bottom: 60px;
+            right:20px;           
         }
         &__btn {
             display: flex;
             justify-content: flex-end;
             color: black;
             position: relative;
-            bottom: 90px;
-            right:10px;
+            bottom: 60px;
+            right:20px;  
             visibility: hidden;       
         }
     }
     .btn_commander 
     {
-        @include btn-order;
-        margin-top: 12%;
-        margin-bottom: 12%;
+        margin-top: 8%;
+        margin-bottom: 8%;
         display: flex;
+        justify-content: center;
         align-self: center;
+        width: 30%;
         a 
         {
+            @include btn-order;
             text-decoration: none;
             color: white;
             font-family: 'roboto', serif, sans-serif;
-            font-size: 1em;
+            font-size: 1.5em;
+            text-align: center;
+            padding:8% 0 8% 0;  
+            width: 100%;
         }
     }
 }

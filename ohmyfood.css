@@ -775,7 +775,7 @@ body h4 {
   .top__previous a {
     text-decoration: none;
     color: black;
-    font-size: 1.1em;
+    font-size: 2.7em;
   }
   .top__previous {
     display: flex;
@@ -795,7 +795,7 @@ body h4 {
   .top__img {
     display: flex;
     width: 100%;
-    height: 220px;
+    height: 50%;
     overflow: hidden;
   }
   .top__img img {
@@ -808,23 +808,23 @@ body h4 {
     align-items: center;
     border: 1px solid #f6f6f6;
     background-color: #f6f6f6;
-    border-radius: 30px 30px 0 0;
+    border-radius: 50px 50px 0 0;
     width: 100%;
     margin-top: -12%;
   }
   .top__title h1 {
     font-family: "Shrikhand", "roboto", serif, sans-serif;
-    font-size: 1.6em;
-    margin: 5% 5% 3% 0;
+    font-size: 3em;
+    margin: 3% 5% 3% 0;
     padding-left: 0;
   }
   .top__title a {
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 2.5em;
     color: black;
     background-color: #f6f6f6;
     margin-left: 2%;
-    margin-top: 2%;
+    margin-top: 0;
     font-weight: lighter;
   }
 
@@ -843,20 +843,20 @@ body h4 {
   .menu__title h2 {
     color: black;
     font-weight: lighter;
-    font-size: 1em;
+    font-size: 1.5em;
     margin-bottom: 9%;
   }
   .menu__line {
     border-top: #99E2D0 solid 3px;
     margin-left: 5%;
     padding: 0;
-    width: 13%;
+    width: 10%;
   }
 
   .dish_btn {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0;
@@ -866,68 +866,72 @@ body h4 {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 90%;
-    height: 75px;
+    width: 65%;
+    height: 90px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 3px 10px rgba(104, 54, 54, 0.2);
     max-width: 100%;
     background-color: white;
     border: 1px solid white;
-    margin: 3% 0 1% 0;
-    padding-left: 5%;
+    margin: 2% 0 1% 0;
   }
   .dish__link {
     text-decoration: none;
     width: 100%;
-    height: 75px;
+    height: 90px;
   }
   .dish__title {
     color: black;
     font-weight: bold;
-    font-size: 1em;
-    margin: 4% 0 2% -2%;
+    font-size: 1.6em;
+    margin: 3% 0 0 3%;
   }
   .dish__text {
     font-weight: lighter;
     color: black;
-    font-size: 0.8em;
-    margin: 0 0 0 -2%;
+    font-size: 1.2em;
+    margin: 1% 0 0 3%;
   }
   .dish__price {
     font-weight: bold;
     color: black;
-    font-size: 1em;
+    font-size: 1.2em;
     display: flex;
     justify-content: flex-end;
     position: relative;
-    bottom: 32px;
-    right: 10px;
+    bottom: 60px;
+    right: 20px;
   }
   .dish__btn {
     display: flex;
     justify-content: flex-end;
     color: black;
     position: relative;
-    bottom: 90px;
-    right: 10px;
+    bottom: 60px;
+    right: 20px;
     visibility: hidden;
   }
 
   .btn_commander {
+    margin-top: 8%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 30%;
+  }
+  .btn_commander a {
     border: 1px solid #b260db;
     background-color: #b260db;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 50px 50px 50px 50px;
-    margin-top: 12%;
-    margin-bottom: 12%;
-    display: flex;
-    align-self: center;
-  }
-  .btn_commander a {
     text-decoration: none;
     color: white;
     font-family: "roboto", serif, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 8% 0 8% 0;
+    width: 100%;
   }
 }
 
