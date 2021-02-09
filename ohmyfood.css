@@ -150,7 +150,7 @@ body h4 {
     padding: 2% 3% 1% 3%;
     margin: 0 8% 0 -4%;
   }
-  .choices span {
+  .choices__icone {
     font-size: 1.2em;
     color: grey;
     margin-right: 8%;
@@ -226,14 +226,16 @@ body h4 {
     color: black;
     margin-left: 5%;
   }
-  .carte span {
+  .carte__heart {
     color: black;
-    margin-left: 5%;
     font-size: 1.6em;
     font-weight: lighter;
     position: relative;
     bottom: 17%;
-    left: 80%;
+    left: 87%;
+    padding: 0;
+    margin: 0;
+    width: 0;
   }
   .carte__nouveau {
     border: 1px solid #99E2D0;
@@ -618,7 +620,7 @@ body h4 {
     padding: 2% 3% 1% 3%;
     margin: 0 8% 0 -4%;
   }
-  .choices span {
+  .choices__icone {
     font-size: 1.2em;
     color: grey;
     margin-right: 8%;
@@ -696,14 +698,19 @@ body h4 {
     color: black;
     margin-left: 5%;
   }
-  .carte span {
+  .carte__heart {
     color: black;
-    margin-left: 5%;
+    padding: 0;
+    margin: 0;
+    width: 0;
     font-size: 1.5em;
     font-weight: lighter;
     position: relative;
     bottom: 17%;
-    left: 80%;
+    left: 87%;
+    padding: 0;
+    margin: 0;
+    width: 0;
   }
   .carte__nouveau {
     border: 1px solid #99E2D0;
@@ -1081,7 +1088,7 @@ body h4 {
     padding: 2% 3% 1% 3%;
     margin: 0 10% 0 -4%;
   }
-  .choices span {
+  .choices__icone {
     font-size: 1.6em;
     color: grey;
     margin-right: 10%;
@@ -1159,14 +1166,17 @@ body h4 {
     color: black;
     margin-left: 5%;
   }
-  .carte span {
+  .carte__heart {
     color: black;
     margin-left: 5%;
     font-size: 1.6em;
     font-weight: lighter;
     position: relative;
     bottom: 17%;
-    left: 80%;
+    left: 87%;
+    padding: 0;
+    margin: 0;
+    width: 0;
   }
   .carte__nouveau {
     border: 1px solid #99E2D0;
