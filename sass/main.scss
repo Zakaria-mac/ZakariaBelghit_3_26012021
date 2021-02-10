@@ -369,12 +369,29 @@ body h4
     .menu
     {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction:column;
+        justify-content:center;
         align-items:center;
         background-color:$fond-color;
-        width: 64%;
+        width: 100%;
         margin: auto;
+    }
+    .dish_btn{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+    }
+        
+    .dish_btn1, .dish_btn2, .dish_btn3, 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 80%;
+        margin:0;
         &__title{
             margin-top: 2%;
         }
@@ -390,15 +407,6 @@ body h4
             width: 10%;
             margin-bottom: 2%;
         }
-    }
-    .dish_btn
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        width: 80%;
-        margin:0;
     }
     .dish
     {
@@ -847,7 +855,26 @@ body h4
         align-items: flex-start;
         background-color:$fond-color;
         width: 100%;
+    }
+    .dish_btn{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        margin:0;    
+    }
+    .dish_btn1, .dish_btn2, .dish_btn3, 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        margin:0;
         &__title{
+            display: flex;
+            align-self: flex-start;
             padding-left: 5%;
             margin-top: 5%;
         }
@@ -858,21 +885,15 @@ body h4
             margin-bottom: 9%;
         }
         &__line{
+            display: flex;
+            align-self: flex-start;
             border-top: $third-color solid 3px;
             margin-left: 5%;
             padding: 0;
             width: 13%;
         }
     }
-    .dish_btn
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content:flex-start;
-        align-items: center;
-        width: 100%;
-        margin:0;
-    }
+    
     .dish
     {
         display: flex;
@@ -1315,8 +1336,24 @@ body h4
         align-items: flex-start;
         background-color:$fond-color;
         width: 100%;
+    }
+    .dish_btn{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        margin:0;
+    }
+    .dish_btn1, .dish_btn2, .dish_btn3, 
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+        margin:0;
         &__title{
-            padding-left: 5%;
             margin-top: 5%;
         }
         &__title h2{
@@ -1327,26 +1364,16 @@ body h4
         }
         &__line{
             border-top: $third-color solid 3px;
-            margin-left: 5%;
             padding: 0;
             width: 10%;
         }
-    }
-    .dish_btn
-    {
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        width: 100%;
-        margin:0;
     }
     .dish
     {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        width: 65%;
+        width: 70%;
         height: 90px;
         @include btn-menu;
         background-color: white;
