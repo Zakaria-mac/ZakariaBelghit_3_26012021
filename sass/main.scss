@@ -384,7 +384,7 @@ body h4
         align-items: center;
     }
         
-    .dish_btn1, .dish_btn2, .dish_btn3, 
+    .dish_btn1, .dish_btn2, .dish_btn3 
     {
         display: flex;
         flex-direction: column;
@@ -477,8 +477,8 @@ body h4
             width: 100%;
         }
     }
-   
 }
+
 @media (min-device-width:320px) and (max-device-width:480px)
 {
     body{
@@ -864,7 +864,7 @@ body h4
         width: 100%;
         margin:0;    
     }
-    .dish_btn1, .dish_btn2, .dish_btn3, 
+    .dish_btn1, .dish_btn2, .dish_btn3 
     {
         display: flex;
         flex-direction: column;
@@ -1345,7 +1345,7 @@ body h4
         width: 100%;
         margin:0;
     }
-    .dish_btn1, .dish_btn2, .dish_btn3, 
+    .dish_btn1, .dish_btn2, .dish_btn3 
     {
         display: flex;
         flex-direction: column;
