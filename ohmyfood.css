@@ -97,7 +97,7 @@ body h4 {
     border: none;
     cursor: pointer;
     transform: scale(1);
-    transition: transform 200ms;
+    transition: transform 300ms;
   }
   .title__btn:hover {
     transform: scale(1.02);
@@ -135,6 +135,11 @@ body h4 {
     margin-left: 3%;
     background-color: #f6f6f6;
     border: 1px solid #f6f6f6;
+    transform: scale(1);
+    transition: transform 300ms;
+  }
+  .choices:hover {
+    transform: scale(1.05);
   }
   .choices__a {
     width: 100%;
@@ -145,6 +150,12 @@ body h4 {
     align-items: center;
     text-decoration: none;
     margin-right: 2%;
+    transform: scale(1);
+    transition: transform 300ms;
+  }
+  .choices__a:hover span {
+    transform: scale(1.2);
+    color: #b260db;
   }
   .choices__number {
     font-size: 0.9em;
@@ -595,7 +606,7 @@ body h4 {
     border: none;
     cursor: pointer;
     transform: scale(1);
-    transition: transform 200ms;
+    transition: transform 300ms;
   }
   .title__btn:hover {
     transform: scale(1.02);
@@ -636,6 +647,11 @@ body h4 {
     margin-bottom: 10%;
     background-color: #f6f6f6;
     border: 1px solid #f6f6f6;
+    transform: scale(1);
+    transition: transform 300ms;
+  }
+  .choices:hover {
+    transform: scale(1.05);
   }
   .choices__a {
     width: 100%;
@@ -645,6 +661,12 @@ body h4 {
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
+    transform: scale(1);
+    transition: transform 300ms;
+  }
+  .choices__a:hover span {
+    transform: scale(1.2);
+    color: #b260db;
   }
   .choices__number {
     font-size: 0.9em;
@@ -1099,7 +1121,7 @@ body h4 {
     font-family: "roboto", serif, sans-serif;
     text-align: center;
     transform: scale(1);
-    transition: transform 200ms;
+    transition: transform 300ms;
   }
   .title__btn:hover {
     transform: scale(1.02);
@@ -1139,6 +1161,11 @@ body h4 {
     max-width: 100%;
     background-color: #f6f6f6;
     border: 1px solid #f6f6f6;
+    transform: scale(1);
+    transition: transform 300ms;
+  }
+  .choices:hover {
+    transform: scale(1.05);
   }
   .choices__a {
     width: 100%;
@@ -1148,6 +1175,12 @@ body h4 {
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
+    transform: scale(1);
+    transition: transform 300ms;
+  }
+  .choices__a:hover span {
+    transform: scale(1.2);
+    color: #b260db;
   }
   .choices__number {
     font-size: 1.2em;
