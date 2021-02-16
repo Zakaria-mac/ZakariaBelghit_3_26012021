@@ -80,23 +80,28 @@ body h4 {
   }
   .title__btn {
     margin-top: 2%;
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .title__btn a {
-    border-radius: 20px 20px 20px 20px;
-    box-shadow: 1px 3px 10px rgba(104, 54, 54, 0.2);
-    max-width: 100%;
-    background-color: #b260db;
-    text-decoration: none;
+    width: 20%;
+    padding: 1%;
     color: white;
     font-size: 1.4em;
     font-weight: normal;
     font-family: "roboto", serif, sans-serif;
     text-align: center;
-    padding: 1% 2% 1% 2%;
+    border: 1px solid #b260db;
+    background-color: #b260db;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 200ms;
+  }
+  .title__btn:hover {
+    transform: scale(1.02);
+    background: linear-gradient(#ff83dd, #8b49d9);
   }
 
   .navigation {
@@ -304,14 +309,14 @@ body h4 {
   .top__previous {
     display: flex;
     align-self: flex-start;
-    margin: 5% 0 0 6%;
+    margin: 4% 0 1% 6%;
   }
   .top__logo {
     display: flex;
     justify-content: center;
     align-self: center;
     width: 30%;
-    margin: -5% 0 3% 0;
+    margin: -6% 0 2% 0;
   }
   .top__logo img {
     width: 100%;
@@ -453,19 +458,38 @@ body h4 {
     justify-content: center;
     align-self: center;
     width: 20%;
-  }
-  .btn_commander a {
+    position: relative;
+    z-index: 1;
     border: 1px solid #b260db;
     background-color: #b260db;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 50px 50px 50px 50px;
-    text-decoration: none;
     color: white;
     font-family: "roboto", serif, sans-serif;
     font-size: 1.5em;
     text-align: center;
-    padding: 8% 0 8% 0;
-    width: 100%;
+    padding: 1%;
+    cursor: pointer;
+  }
+  .btn_commander:hover::after {
+    opacity: 1;
+  }
+  .btn_commander::after {
+    content: "";
+    border: 1px solid #b260db;
+    background-color: #b260db;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#ff83dd, #8b49d9);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 300ms;
+    border: none;
   }
 }
 @media (min-device-width: 320px) and (max-device-width: 480px) {
@@ -557,20 +581,25 @@ body h4 {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .title__btn a {
     border: 1px solid #b260db;
     background-color: #b260db;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 50px 50px 50px 50px;
-    text-decoration: none;
     color: white;
     font-size: 1em;
     font-weight: normal;
     font-family: "roboto", serif, sans-serif;
     text-align: center;
-    padding: 8% 0 8% 0;
-    width: 100%;
+    padding: 5%;
+    width: 75%;
+    border: none;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 200ms;
+  }
+  .title__btn:hover {
+    transform: scale(1.02);
+    background: linear-gradient(#ff83dd, #8b49d9);
   }
 
   .navigation {
@@ -933,20 +962,39 @@ body h4 {
     margin-bottom: 12%;
     display: flex;
     align-self: center;
-    width: 50%;
-  }
-  .btn_commander a {
+    width: 40%;
     border: 1px solid #b260db;
     background-color: #b260db;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 50px 50px 50px 50px;
-    text-decoration: none;
     color: white;
     font-family: "roboto", serif, sans-serif;
     font-size: 1em;
-    padding: 8% 0 8% 0;
-    width: 100%;
+    padding: 3%;
+    justify-content: center;
     text-align: center;
+    z-index: 1;
+    position: relative;
+  }
+  .btn_commander:hover::after {
+    opacity: 1;
+  }
+  .btn_commander::after {
+    content: "";
+    border: 1px solid #b260db;
+    background-color: #b260db;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#ff83dd, #8b49d9);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 300ms;
+    border: none;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1034,13 +1082,12 @@ body h4 {
     font-weight: lighter;
   }
   .title__btn {
-    margin-top: 8%;
+    margin-top: 4%;
     margin-bottom: 2%;
     width: 40%;
+    padding: 2%;
     display: flex;
     justify-content: center;
-  }
-  .title__btn a {
     border: 1px solid #b260db;
     background-color: #b260db;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
@@ -1051,8 +1098,12 @@ body h4 {
     font-weight: normal;
     font-family: "roboto", serif, sans-serif;
     text-align: center;
-    padding: 8% 4% 8% 4%;
-    width: 100%;
+    transform: scale(1);
+    transition: transform 200ms;
+  }
+  .title__btn:hover {
+    transform: scale(1.02);
+    background: linear-gradient(#ff83dd, #8b49d9);
   }
 
   .navigation {
@@ -1408,19 +1459,38 @@ body h4 {
     justify-content: center;
     align-self: center;
     width: 30%;
-  }
-  .btn_commander a {
     border: 1px solid #b260db;
     background-color: #b260db;
     box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 50px 50px 50px 50px;
-    text-decoration: none;
     color: white;
     font-family: "roboto", serif, sans-serif;
     font-size: 1.5em;
     text-align: center;
-    padding: 8% 0 8% 0;
-    width: 100%;
+    padding: 2%;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+  }
+  .btn_commander:hover::after {
+    opacity: 1;
+  }
+  .btn_commander::after {
+    content: "";
+    border: 1px solid #b260db;
+    background-color: #b260db;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#ff83dd, #8b49d9);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 300ms;
+    border: none;
   }
 }
 

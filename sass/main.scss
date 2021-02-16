@@ -14,6 +14,7 @@ $btn-color: #b260db;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 3px 10px rgba(104, 54, 54, 0.2);
     max-width: 100%;
+ 
 }
 body h1, h2, h3,p 
 {
@@ -92,22 +93,25 @@ body h4
         }
         &__btn{
             margin-top: 2%;
-            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        &__btn a {
-            @include btn-menu;
-            background-color: $btn-color;
-            text-decoration: none;
+            width: 20%;
+            padding: 1%;
             color: white;
             font-size: 1.4em;
             font-weight: normal;
             font-family: 'roboto', serif, sans-serif;   
             text-align: center;
-            padding:1% 2% 1% 2%;
-            
+            @include btn-order;
+            border: none;
+            cursor: pointer;
+            transform: scale(1);
+            transition: transform 200ms;
+            &:hover{
+                transform: scale(1.02);
+                background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+            }
         }
     }
     .navigation{
@@ -313,14 +317,14 @@ body h4
         &__previous{ 
             display: flex;
             align-self: flex-start;
-            margin: 5% 0 0 6%;
+            margin: 4% 0 1% 6%;
         }
         &__logo{
             display: flex;
             justify-content: center;
             align-self: center;
             width: 30%;
-            margin: -5% 0 3% 0;
+            margin: -6% 0 2% 0;
             
         }
         &__logo img{
@@ -462,16 +466,34 @@ body h4
         justify-content: center;
         align-self: center;
         width: 20%;
-        a 
-        {
+        position: relative;
+        z-index: 1;
+        @include btn-order;
+        color: white;
+        font-family: 'roboto', serif, sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        padding:1%;
+        cursor: pointer;   
+        &:hover{
+            &::after{
+                opacity: 1;
+            }
+        }
+        
+        &::after {
+            content: "";
             @include btn-order;
-            text-decoration: none;
-            color: white;
-            font-family: 'roboto', serif, sans-serif;
-            font-size: 1.5em;
-            text-align: center;
-            padding:8% 0 8% 0;  
-            width: 100%;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 300ms;
+            border: none;
         }
     }
 }
@@ -571,18 +593,22 @@ body h4
             display: flex;
             justify-content: center;
             align-items: center;
-        }
-        &__btn a 
-        {
             @include btn-order;
-            text-decoration: none;
             color: white;
             font-size: 1em;
             font-weight: normal;
             font-family: 'roboto', serif, sans-serif;   
             text-align: center;
-            padding:8% 0 8% 0;  
-            width: 100%;
+            padding:5%;  
+            width: 75%;
+            border: none;
+            cursor: pointer;
+            transform: scale(1);
+            transition: transform 200ms;
+            &:hover{
+                transform: scale(1.02);
+                background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+            }
         }
     }
     .navigation
@@ -947,17 +973,34 @@ body h4
         margin-bottom: 12%;
         display: flex;
         align-self: center;
-        width: 50%;
-        a 
-        {
+        width: 40%;
+       @include btn-order;
+        color: white;
+        font-family: 'roboto', serif, sans-serif;
+        font-size: 1em;
+        padding:3%;  
+        justify-content: center;
+        text-align:center;
+        z-index: 1;
+        position: relative;
+        &:hover{
+            &::after{
+                opacity: 1;
+            }
+        }       
+        &::after {
+            content: "";
             @include btn-order;
-            text-decoration: none;
-            color: white;
-            font-family: 'roboto', serif, sans-serif;
-            font-size: 1em;
-            padding:8% 0 8% 0;  
-            width: 100%;
-            text-align:center;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 300ms;
+            border: none;
         }
     }
 }
@@ -1051,14 +1094,12 @@ body h4
         }
         &__btn
         {  
-            margin-top: 8%;
+            margin-top: 4%;
             margin-bottom: 2%;
             width: 40%;
+            padding: 2%;
             display: flex;
-            justify-content: center
-        }
-        &__btn a 
-        {
+            justify-content: center;
             @include btn-order;
             text-decoration: none;
             color: white;
@@ -1066,8 +1107,12 @@ body h4
             font-weight: normal;
             font-family: 'roboto', serif, sans-serif;
             text-align: center;
-            padding: 8% 4% 8% 4%;
-            width: 100%;
+            transform: scale(1);
+            transition: transform 200ms;
+            &:hover{
+                transform: scale(1.02);
+                background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+            }
         }
     }
     .navigation
@@ -1422,16 +1467,33 @@ body h4
         justify-content: center;
         align-self: center;
         width: 30%;
-        a 
-        {
+        @include btn-order;
+        color: white;
+        font-family: 'roboto', serif, sans-serif;
+        font-size: 1.5em;
+        text-align: center;
+        padding:2%;  
+        z-index: 1;
+        position: relative;
+        cursor: pointer;
+        &:hover{
+            &::after{
+                opacity: 1;
+            }
+        }       
+        &::after {
+            content: "";
             @include btn-order;
-            text-decoration: none;
-            color: white;
-            font-family: 'roboto', serif, sans-serif;
-            font-size: 1.5em;
-            text-align: center;
-            padding:8% 0 8% 0;  
-            width: 100%;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 300ms;
+            border: none;
         }
     }
 }
