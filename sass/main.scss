@@ -28,6 +28,14 @@ $btn_gradation:linear-gradient(lighten($secondary-color,2), darken($primary-colo
         transform: translateY(0);
     }
 }
+@keyframes icone{
+    from{
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 body h1, h2, h3,p 
 {
     font-family: 'roboto', serif, sans-serif;
@@ -276,9 +284,8 @@ body h4
             color: black;
             font-size: 2em;
             font-weight: lighter; 
-            span{
-                z-index: 1;
-                &:hover{
+            z-index: 1;
+            &:hover{
                     &::after{
                         opacity: 1;
                     }
@@ -293,10 +300,9 @@ body h4
                     opacity: 0;
                     z-index: -1;
                     transition: opacity 300ms;
-                    color:  $btn_gradation;
+                    background: $btn_gradation;
 
                 }
-            }
             }
         &__nouveau
         {
@@ -474,49 +480,66 @@ body h4
     .dish
     {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction:row;
+        flex-wrap: no-wrap;
+        overflow: hidden;
+        justify-content: space-between;
+        align-content: center;
         width: 80%;
         height: 75px;
         @include btn-menu;
         background-color: white;
-        border: 1px solid white;
-        margin: 2% 0 2% 0; 
-        &__link{
-            text-decoration: none;
-            width: 100%;
-            height: 90px;        
-        }
-        &__title{
-            color: black;
-            font-weight: bold;
-            font-size: 1em;
-            margin:2.5% 0 0 3%;
-        }
-        &__text{
-            font-weight: lighter;
-            color: black;
-            font-size: 0.9em;
-            margin: 1% 0 0 3%;                  
-        }
-        &__price{
-            font-weight: bold;
-            color: black;
-            font-size: 0.9em;
+        margin: 2% 0 2% 0;
+        padding:0;
+        cursor: pointer;
+        &:hover .dish__btn
+            {
+                width: 20%;
+                transition: width 500ms;
+           
+            } 
+        &:hover span{
+            animation: icone 500ms;
+        }     
+        &__box {
             display: flex;
-            justify-content: flex-end;
-            position: relative;
-            bottom: 42px;
-            right:20px;           
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            width: 90%;
+            margin: 2% 4% 0 4%;   
+            &__title{
+                color: black;
+                font-weight: bold;
+                font-size: 1em;
+                margin:1%;
+            }
+            &__text{
+                font-weight: lighter;
+                color: black;
+                font-size: 0.9em;
+                margin: 1%;                
+            }
+            &__price{
+                font-weight: bold;
+                color: black;
+                font-size: 0.9em;
+                position: relative;
+                bottom: 65%;
+                left: 90%;    
+                width: 20%;           
+            }
         }
-        &__btn {
+        &__btn{
+            background: $third-color;
+            color: white;
+            border-radius: 0 20px 20px 0;
+            font-size: 2em;
+            width: 0;
             display: flex;
-            justify-content: flex-end;
-            color: black;
-            position: relative;
-            bottom: 60px;
-            right:20px;  
-            visibility: hidden;       
+            justify-content: center;
+            align-items: center;  
+            margin: 0;       
         }
     }
     .btn_commander 

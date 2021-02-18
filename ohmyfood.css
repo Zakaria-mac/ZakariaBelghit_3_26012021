@@ -8,6 +8,14 @@
     transform: translateY(0);
   }
 }
+@keyframes icone {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 body h1, h2, h3, p {
   font-family: "roboto", serif, sans-serif;
 }
@@ -268,14 +276,12 @@ body h4 {
     color: black;
     font-size: 2em;
     font-weight: lighter;
-  }
-  .carte__heart span {
     z-index: 1;
   }
-  .carte__heart span:hover::after {
+  .carte__heart:hover::after {
     opacity: 1;
   }
-  .carte__heart span::after {
+  .carte__heart::after {
     content: "";
     position: absolute;
     top: 0;
@@ -285,7 +291,7 @@ body h4 {
     opacity: 0;
     z-index: -1;
     transition: opacity 300ms;
-    color: linear-gradient(#ff83dd, #8b49d9);
+    background: linear-gradient(#ff83dd, #8b49d9);
   }
   .carte__nouveau {
     border: 1px solid #99E2D0;
@@ -463,52 +469,67 @@ body h4 {
 
   .dish {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    overflow: hidden;
+    justify-content: space-between;
+    align-content: center;
     width: 80%;
     height: 75px;
     border-radius: 20px 20px 20px 20px;
     box-shadow: 1px 3px 10px rgba(104, 54, 54, 0.2);
     max-width: 100%;
     background-color: white;
-    border: 1px solid white;
     margin: 2% 0 2% 0;
+    padding: 0;
+    cursor: pointer;
   }
-  .dish__link {
-    text-decoration: none;
-    width: 100%;
-    height: 90px;
+  .dish:hover .dish__btn {
+    width: 20%;
+    transition: width 500ms;
   }
-  .dish__title {
+  .dish:hover span {
+    animation: icone 500ms;
+  }
+  .dish__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    width: 90%;
+    margin: 2% 4% 0 4%;
+  }
+  .dish__box__title {
     color: black;
     font-weight: bold;
     font-size: 1em;
-    margin: 2.5% 0 0 3%;
+    margin: 1%;
   }
-  .dish__text {
+  .dish__box__text {
     font-weight: lighter;
     color: black;
     font-size: 0.9em;
-    margin: 1% 0 0 3%;
+    margin: 1%;
   }
-  .dish__price {
+  .dish__box__price {
     font-weight: bold;
     color: black;
     font-size: 0.9em;
-    display: flex;
-    justify-content: flex-end;
     position: relative;
-    bottom: 42px;
-    right: 20px;
+    bottom: 65%;
+    left: 90%;
+    width: 20%;
   }
   .dish__btn {
+    background: #99E2D0;
+    color: white;
+    border-radius: 0 20px 20px 0;
+    font-size: 2em;
+    width: 0;
     display: flex;
-    justify-content: flex-end;
-    color: black;
-    position: relative;
-    bottom: 60px;
-    right: 20px;
-    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 
   .btn_commander {
