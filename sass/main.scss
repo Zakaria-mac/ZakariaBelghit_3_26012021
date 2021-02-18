@@ -3,6 +3,7 @@ $secondary-color: #FF79DA;
 $third-color:#99E2D0;
 $fond-color:#f6f6f6;
 $btn-color: #b260db;
+$btn_gradation:linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
 
 @mixin btn-order{
     border: 1px solid $btn-color;
@@ -15,6 +16,17 @@ $btn-color: #b260db;
     box-shadow: 1px 3px 10px rgba(104, 54, 54, 0.2);
     max-width: 100%;
  
+}
+@keyframes slow-menu{
+    0%{
+       opacity: 0; 
+       transform: translateY(15%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 body h1, h2, h3,p 
 {
@@ -110,7 +122,7 @@ body h4
             transition: transform 300ms;
             &:hover{
                 transform: scale(1.02);
-                background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+                background: $btn_gradation;
             }
         }
     }
@@ -218,6 +230,10 @@ body h4
         align-items: flex-start;
         background-color: white;
         margin: 0 1% 4% 1%;
+        transform: scale(1);
+        transition: transform 400ms;
+        &:hover{
+            transform: scale(1.05);}
         &__a
         {
             width: 100%;
@@ -250,16 +266,38 @@ body h4
             margin-left: 5%;
         }
         &__heart{
-            color: black;
-            font-size: 1.6em;
-            font-weight: lighter;
             position: relative;
             bottom: 17%;
             left: 87%;
             padding: 0;
             margin: 0;
-            width: 0; 
-        }
+            width: 8%;
+            height: 9%;
+            color: black;
+            font-size: 2em;
+            font-weight: lighter; 
+            span{
+                z-index: 1;
+                &:hover{
+                    &::after{
+                        opacity: 1;
+                    }
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    opacity: 0;
+                    z-index: -1;
+                    transition: opacity 300ms;
+                    color:  $btn_gradation;
+
+                }
+            }
+            }
         &__nouveau
         {
             border: 1px solid $third-color;
@@ -302,6 +340,9 @@ body h4
            color: white;
            font-size: 1.1em;
            font-family: 'roboto', serif, sans-serif;
+           &:hover{
+               text-decoration: underline;
+           }
         }
         &__infos a span{
             font-size: 1.2em;
@@ -421,6 +462,15 @@ body h4
             margin-bottom: 2%;
         }
     }
+    .dish_btn1{
+        animation: slow-menu 800ms + 400ms ease-in-out;
+    }
+    .dish_btn2{
+        animation: slow-menu 800ms + 650ms ease-in-out;
+    }
+    .dish_btn3{
+        animation: slow-menu 800ms + 800ms ease-in-out;
+    }
     .dish
     {
         display: flex;
@@ -500,7 +550,7 @@ body h4
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+            background: $btn_gradation;
             opacity: 0;
             z-index: -1;
             transition: opacity 300ms;
@@ -618,7 +668,7 @@ body h4
             transition: transform 300ms;
             &:hover{
                 transform: scale(1.02);
-                background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+                background: $btn_gradation;
             }
         }
     }
@@ -938,7 +988,15 @@ body h4
             width: 13%;
         }
     }
-    
+    .dish_btn1{
+        animation: slow-menu 800ms + 400ms ease-in-out;
+    }
+    .dish_btn2{
+        animation: slow-menu 800ms + 650ms ease-in-out;
+    }
+    .dish_btn3{
+        animation: slow-menu 800ms + 800ms ease-in-out;
+    }
     .dish
     {
         display: flex;
@@ -1018,7 +1076,7 @@ body h4
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+            background: $btn_gradation;
             opacity: 0;
             z-index: -1;
             transition: opacity 300ms;
@@ -1133,7 +1191,7 @@ body h4
             transition: transform 300ms;
             &:hover{
                 transform: scale(1.02);
-                background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+                background: $btn_gradation;
             }
         }
     }
@@ -1427,6 +1485,7 @@ body h4
         align-items: center;
         width: 100%;
         margin:0;
+
         &__title{
             margin-top: 5%;
         }
@@ -1441,6 +1500,15 @@ body h4
             padding: 0;
             width: 10%;
         }
+    }
+    .dish_btn1{
+        animation: slow-menu 800ms + 400ms ease-in-out;
+    }
+    .dish_btn2{
+        animation: slow-menu 800ms + 650ms ease-in-out;
+    }
+    .dish_btn3{
+        animation: slow-menu 800ms + 800ms ease-in-out;
     }
     .dish
     {
@@ -1521,7 +1589,7 @@ body h4
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(lighten($secondary-color,2), darken($primary-color,3));
+            background: $btn_gradation;
             opacity: 0;
             z-index: -1;
             transition: opacity 300ms;
