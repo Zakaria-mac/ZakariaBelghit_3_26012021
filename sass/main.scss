@@ -486,7 +486,6 @@ body h4
         justify-content: space-between;
         align-content: center;
         width: 80%;
-        height: 75px;
         @include btn-menu;
         background-color: white;
         margin: 2% 0 2% 0;
@@ -507,28 +506,43 @@ body h4
             justify-content: flex-start;
             align-content: center;
             width: 90%;
-            margin: 2% 4% 0 4%;   
+            padding: 5% 0 5% 5%;   
+            overflow: visible;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             &__title{
                 color: black;
                 font-weight: bold;
-                font-size: 1em;
+                font-size: 1.1em;
                 margin:1%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
             &__text{
                 font-weight: lighter;
                 color: black;
-                font-size: 0.9em;
-                margin: 1%;                
+                font-size: 1em;
+                margin: 1%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;                
             }
-            &__price{
-                font-weight: bold;
-                color: black;
-                font-size: 0.9em;
-                position: relative;
-                bottom: 65%;
-                left: 90%;    
-                width: 20%;           
-            }
+        }
+        &__price{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: black;
+            font-size: 1em;
+            width: 10%;
+            padding: 5% 0 5% 0;
+            margin-right: 3%;
+            margin-left: 3%;
+            position: relative;
+            z-index: 1000;                
         }
         &__btn{
             background: $third-color;
@@ -1023,51 +1037,80 @@ body h4
     .dish
     {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction:row;
+        flex-wrap: no-wrap;
+        overflow: hidden;
+        justify-content: space-between;
+        align-content: center;
         width: 90%;
-        height: 70px;
         @include btn-menu;
         background-color: white;
-        border: 1px solid white;
         margin: 3% 0 1% 0;
-        padding-left: 5%;     
-        &__link{
-            text-decoration: none;
-            width: 100%;
-            height: 70px;        
-        }
-        &__title{
-            color: black;
-            font-weight: bold;
-            font-size: 1em;
-            margin:4% 0 2% -2%;
-        }
-        &__text{
-            font-weight: lighter;
-            color: black;
-            font-size: 0.8em;
-            margin: 0 0 0 -2%; 
-                 
+        padding-left: 1%; 
+        padding-right: 0;  
+        cursor: pointer;
+        &:hover .dish__btn
+            {
+                width: 20%;
+                transition: width 500ms;     
+            }   
+        &:hover span{
+            animation: icone 500ms;
+        } 
+        &__box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            width:75%;
+            padding: 5% 0 5% 3%;
+            position: relative;
+            z-index: 1;   
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            &__title{
+                color: black;
+                font-weight: bold;
+                font-size: 1em; 
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            &__text{
+                font-weight: lighter;
+                color: black;
+                font-size: 0.9em;  
+                margin: 1% 0 0 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
         }
         &__price{
             font-weight: bold;
             color: black;
-            font-size: 1em;
+            font-size: 0.9em;
             display: flex;
-            justify-content: flex-end;
+            justify-content:flex-end;
+            align-items: flex-end;
+            width: 10%;    
+            margin-right: 3%;
+            margin-left: 3%;
             position: relative;
-            bottom: 34px;
-            right:10px;           
+            z-index: 1000;
         }
         &__btn {
+            background: $third-color;
+            color: white;
+            border-radius: 0 20px 20px 0;
+            font-size: 1.4em;
+            width: 0;
             display: flex;
-            justify-content: flex-end;
-            color: black;
-            position: relative;
-            bottom: 90px;
-            right:10px;
-            visibility: hidden;       
+            justify-content: center;
+            align-items: center;  
+            margin: 0;             
         }
     }
     .btn_commander 
@@ -1536,50 +1579,80 @@ body h4
     .dish
     {
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
+        flex-direction:row;
+        flex-wrap: no-wrap;
+        overflow: hidden;
+        justify-content: space-between;
+        align-content: center;
         width: 70%;
-        height: 90px;
         @include btn-menu;
         background-color: white;
-        border: 1px solid white;
         margin: 2% 0 1% 0;
-        
-        &__link{
-            text-decoration: none;
-            width: 100%;
-            height: 90px;        
-        }
-        &__title{
-            color: black;
-            font-weight: bold;
-            font-size: 1.6em;
-            margin:3% 0 0 3%;
-        }
-        &__text{
-            font-weight: lighter;
-            color: black;
-            font-size: 1.2em;
-            margin: 1% 0 0 3%;                  
+        cursor: pointer;
+        &:hover .dish__btn
+        {
+            width: 20%;
+            transition: width 500ms;     
+        }   
+            &:hover span{
+            animation: icone 500ms;
+        }   
+        &__box {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-content: center;
+            width:75%;
+            padding: 2% 0 4% 2%;
+            position: relative;
+            z-index: 1;   
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;   
+            &__title{
+                color: black;
+                font-weight: bold;
+                font-size: 1.4em;
+                margin:3% 0 0 3%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }   
+            &__text{
+                font-weight: lighter;
+                color: black;
+                font-size: 1.2em;
+                margin: 1% 0 0 3%;    
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;              
+            }
         }
         &__price{
+            font-size: 1.1em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10%;
+            padding: 2% 0 4% 0;
+            margin-right: 3%;
+            margin-left: 3%;
+            position: relative;
+            z-index: 1000;
             font-weight: bold;
             color: black;
-            font-size: 1.2em;
-            display: flex;
-            justify-content: flex-end;
-            position: relative;
-            bottom: 60px;
-            right:20px;           
+            font-size: 1.2em;                   
         }
         &__btn {
+            background: $third-color;
+            color: white;
+            border-radius: 0 20px 20px 0;
+            font-size: 2em;
+            width: 0;
             display: flex;
-            justify-content: flex-end;
-            color: black;
-            position: relative;
-            bottom: 60px;
-            right:20px;  
-            visibility: hidden;       
+            justify-content: center;
+            align-items: center;  
+            margin: 0;             
         }
     }
     .btn_commander 
