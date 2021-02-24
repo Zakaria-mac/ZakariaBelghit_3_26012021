@@ -388,7 +388,7 @@ body h4
             padding: 0;
             margin: 0;
             font-size: 1.6em;
-            color: $btn_gradation;
+            background: $btn_gradation;
             border: none;
             z-index: 0;
             width: 0;
@@ -582,7 +582,7 @@ body h4
     {
         display: flex;
         flex-direction:row;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         overflow: hidden;
         justify-content: space-between;
         align-content: center;
@@ -985,7 +985,7 @@ body h4
                 margin: 0;
                 font-size: 1.6em;
                 width: 0;
-                color: $btn_gradation;
+                background: $btn_gradation;
                 border: none;
                 z-index: 0;
                 opacity: 0;
@@ -1178,7 +1178,7 @@ body h4
     {
         display: flex;
         flex-direction:row;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         overflow: hidden;
         justify-content: space-between;
         align-content: center;
@@ -1572,7 +1572,7 @@ body h4
             padding: 0;
             margin: 0;
             font-size: 1.6em;
-            color: $btn_gradation;
+            background: $btn_gradation;
             border: none;
             z-index: 0;
             width: 0;
@@ -1759,7 +1759,7 @@ body h4
     {
         display: flex;
         flex-direction:row;
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         overflow: hidden;
         justify-content: space-between;
         align-content: center;
